@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <script>
+  window.addEventListener('load', function () {
+    if (window.innerHeight > window.innerWidth) {
+      alert("For a better experience, please rotate your device to landscape view.");
+    }
+  });
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -10,6 +18,7 @@
 </head>
 
 <body>
+
   <nav class="navbar">
     <a href="#home">Home</a>
     <a href="#contact">Contact</a>
