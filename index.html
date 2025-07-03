@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.19/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+  <section id="home">
+    <div class="intro">
+      <h1>Hi , I'm Anany</h1>
+      <div class="para1">welcome to my website <br> </div>
+      <div class="para2">Imma CS student learning and finding things out i guesss </div>
+    </div>
+  </section>
+
+
+  <div class="modelwrapper">
+    <div class="overlay">hehe this model aint kool</div>
+
+    <spline-viewer url="https://prod.spline.design/S6guwGihHO04QzLd/scene.splinecode"></spline-viewer>
+
+  </div>
+  <div id="about" class="OVER">
+    <div class="overview">OVERVIEW</div>
+    <div class="overdata" style="font-family: sans-serif;">I'm a student currently learning and figuring things out.
+      <br> i have proficiencies in
+      PYTHON , C++ , BOTPRESS , CANVA , figma , 3-d modelling , SQL , webdev , CSS .
+    </div>
+  </div>
+  <div class="logo">
+    <div class="logo3up">
+      <img src="c-.png" alt="My Logo" class="logo1" />
+      <img src="python.png" alt="My Logo" class="logo2" />
+      <img src="css-3.png" alt="My Logo" class="logo3" />
+      <img src="figma.png" alt="My Logo" class="logo6" />
+    </div>
+    <div class="logo2down">
+      <img src="1656732927canva-logo-png.png" alt="My Logo" class="logo4" />
+      <img src="Botpresh.png" alt="My Logo" class="logo5" />
+    </div>
+  </div>
+
+  <section id="contact" class="reveal">
+    <div class="together">
+      <h1>Let's Work <br> together!</h1>
+    </div>
+
+    <div class="contact-section">
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeuahpmEOrKspSAuPkwU7ryATrP0Rq9XpOg7Cg3fF0xY7ie2Q/viewform?embedded=true"
+        width="540" height="951" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+
+  </section>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    document.querySelectorAll('.OVER').forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+<footer>
+  <div class="text">Dont expect much yk i'm weird !</div>
+  <div class="text2"> and btw if u didnt , go click on the robot (its interacrive)</div>
+</footer>
+<div class="endlogo">
+  <a href="https://www.instagram.com/anany._.chauhan/" target="_blank">
+    <img src="instagram (1).png" alt="My Logo" class="logoend" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/anany-chauhan-4a422532a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    target="_blank">
+    <img src="linkedin (1).png" alt="My Logo" class="logoend" />
+  </a>
+  <a href="https://www.reddit.com/u/no_name-_-huh/s/RTQpgchcGF" target="_blank">
+    <img src="reddit.png" alt="My Logo" class="logoend" />
+  </a>
+</div>
+
+</html>
